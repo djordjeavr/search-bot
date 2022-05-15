@@ -16,11 +16,13 @@ with SearchBot() as bot:
     while counter != number2:
         for value in websites:
             bot.land_first_page()
-            sleep(3 + random.random())
+            sleep(5 + random.random())
+            bot.accept_google_cookie()
+            sleep(5 + random.random())
             bot.inserting_values(value)
-            sleep(3 + random.random())
+            sleep(5 + random.random())
             bot.open_website()
-            sleep(3 + random.random())
+            sleep(5 + random.random())
             bot.accept_cookie()
             sleep(20 + random.random())
         counter += 1
